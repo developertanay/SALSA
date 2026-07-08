@@ -216,6 +216,10 @@ for actually training a model to convergence.
 ```bash
 python -m pytest tests/ -v
 ```
+pip install -r requirements.txt
+python -m pytest tests\ -v                    # 42 passed
+jupyter lab notebooks\                         # open and run the 4 notebooks
+docker compose run train 
 
 Expected: **42 passed**, covering dataset correctness (mathematical spot
 checks against Python's own arithmetic), tokenizer/padding/masking
